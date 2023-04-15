@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "tepletes/",
+      "src": "templates/",
       "use": "@vercel/static"
     },
     {
@@ -19,9 +19,9 @@
       "dest": "templates/views/login.hbs"
     },
     {
-        "src": "/register",
-        "dest": "templates/views/register.hbs"
-      },
+      "src": "/register",
+      "dest": "templates/views/register.hbs"
+    },
     {
       "src": "/(.*)",
       "dest": "app.js"
