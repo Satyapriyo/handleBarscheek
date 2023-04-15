@@ -1,11 +1,27 @@
 {
   "builds": [
     {
+      "src": "tepletes/",
+      "use": "@vercel/static"
+    },
+    {
       "src": "index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
+    {
+      "src": "/",
+      "dest": "templates/views/index.hbs"
+    },
+    {
+      "src": "/login",
+      "dest": "templates/views/login.hbs"
+    },
+    {
+        "src": "/register",
+        "dest": "templates/views/register.hbs"
+      },
     {
       "src": "/(.*)",
       "dest": "app.js"
