@@ -1,8 +1,12 @@
 {
   "builds": [
     {
-      "src": "templates/",
-      "use": "@vercel/static/views"
+      "src": "templates/views",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "templates/partials",
+      "use": "@vercel/static"
     },
     {
       "src": "index.js",
