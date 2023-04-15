@@ -1,0 +1,31 @@
+<html>
+  <head>
+    {{>headers}}
+  </head>
+  <body>
+    <h2>LOGIN PAGE</h2>
+    <div class="container-new">
+      <form action ="/register" method="POST">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+              name="email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" name="password">
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword4" class="form-label">Conform Password</label>
+            <input type="password" class="form-control" id="inputPassword4" name="conformpassword">
+          </div>
+          <input type="submit" class="btn btn-outline-primary" value="register"></input>
+      </form>
+    </div>
+  </body>
+</html>
