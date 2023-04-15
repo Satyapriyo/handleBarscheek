@@ -2,7 +2,7 @@
   "builds": [
     {
       "src": "templates/",
-      "use": "@vercel/static"
+      "use": "@vercel/static/views"
     },
     {
       "src": "index.js",
